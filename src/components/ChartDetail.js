@@ -14,10 +14,7 @@ const ChartDetail = (props) => {
       </p>
       <img src={props.image} alt="music"/>
 
-      <audio>
-        <source src={props.audio} preload='auto'/>
-      </audio>
-      <button>Play audio</button>
+      <audio src={props.audio} className="preview-song" controls></audio>
     </div>
 
   )
